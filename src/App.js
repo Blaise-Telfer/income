@@ -7,6 +7,7 @@ function App() {
     <Provider store={store}>
 	  <div className="main-container">
         <Calculator />
+        "and here is the new text"
       </div>
 	</Provider>
   );
