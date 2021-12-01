@@ -1,0 +1,65 @@
+/*global variables*/
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+html, body{
+	min-height: 100%;
+	outline: none;
+	background: #202020;
+	color: #202020;
+	margin: 0;
+	padding: 0;
+	font-family: 'Recursive', sans-serif;
+	scroll-behavior: smooth;
+}
+
+/*app container*/
+.main-container{
+	margin: 50px auto;
+	padding: 40px;
+	width: 75%;
+	text-align: center;
+	background: #e6e6e6;
+}
+
+/*calculator component*/
+.calc-container{
+	max-width: 75%;
+	margin: auto;
+}
+.input-form{
+	display: flex;
+	flex-direction: column;
+	margin: 20px 0;
+}
+.cell{
+	margin: 10px 0;
+}
+.cell > input{
+	text-align: center;
+}
+button{
+	background: #3498db;
+	padding: 10px 5px;
+	margin: 10px auto;
+	border: none;
+	cursor: pointer;
+	width: 7rem;
+	font-weight: 700;
+}
+button:hover{
+	background: #202020;
+	color: #3498db;
+}
+.result{
+	line-height: 2em;
+}
+
+/*media queries*/
+@media(max-width: 500px){
+	.calc-container{
+		max-width: 90%;
+	}
+}
